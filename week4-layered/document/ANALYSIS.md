@@ -115,24 +115,8 @@ Performance overhead มีผลเล็กน้อยในระบบ CRUD
 
 ### Decision Tree
 
-เริ่มต้นโปรเจกต์
-│
-├─ ขนาดทีม?
-│ ├─ 1–2 คน → Monolithic
-│ └─ 3+ คน → Layered
-│
-├─ ขนาดโปรเจกต์?
-│ ├─ เล็ก (< 1000 บรรทัด) → Monolithic
-│ ├─ กลาง (1000–10000 บรรทัด) → Layered
-│ └─ ใหญ่ (> 10000 บรรทัด) → Layered
-│
-├─ ระยะเวลาพัฒนา?
-│ ├─ ต้องการเร็ว (< 1 เดือน) → Monolithic
-│ └─ มีเวลา (> 1 เดือน) → Layered
-│
-└─ ต้องการ maintainability สูง?
-├─ ใช่ → Layered
-└─ ไม่ → Monolithic
+
+<img width="297" height="376" alt="Screenshot 2568-12-22 at 11 04 50" src="https://github.com/user-attachments/assets/1d1113e3-d611-47c2-a131-c96ca9aeb1fd" />
 
 
 ### เหตุผลโดยสรุป

@@ -1,0 +1,24 @@
+2026-01-05T07:12:59: ℹ️  [INFO] GET /config.js
+2026-01-05T07:48:31: ℹ️  [INFO] GET /api/tasks
+2026-01-05T07:48:31: ℹ️  [INFO] GET /favicon.ico
+2026-01-05T07:51:20: ℹ️  [INFO] GET /config.js
+2026-01-05T07:51:25: ℹ️  [INFO] GET /config.js
+2026-01-05T07:51:45: ℹ️  [INFO] GET /config.js
+2026-01-05T07:51:50: ℹ️  [INFO] GET /config.js
+2026-01-05T08:10:26: ℹ️  [INFO] 🛑 Shutting down...
+2026-01-05T08:10:26: ✅ ปิดการเชื่อมต่อฐานข้อมูล
+2026-01-05T08:10:26: [dotenv@17.2.3] injecting env (3) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+2026-01-05T08:10:27: [dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+2026-01-05T08:10:27: ✅ เชื่อมต่อฐานข้อมูลสำเร็จ: /home/devlab/projects/task-board-api/database/tasks.db
+2026-01-05T08:10:27: ℹ️  [INFO] 🚀 Server running at http://0.0.0.0:3000
+2026-01-05T08:10:27: ℹ️  [INFO] 📊 Environment: production
+2026-01-05T08:10:35: ℹ️  [INFO] GET /config.js
+2026-01-05T08:10:50: ℹ️  [INFO] GET /config.js
+2026-01-05T08:15:22: ℹ️  [INFO] GET /api/tasks
+2026-01-05T08:16:30: ℹ️  [INFO] GET /api/tasks
+2026-01-05T08:18:12: ℹ️  [INFO] GET /config.js
+2026-01-05T15:11:35: [dotenv@17.2.3] injecting env (3) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+2026-01-05T15:11:36: [dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+2026-01-05T15:11:36: ✅ เชื่อมต่อฐานข้อมูลสำเร็จ: /home/devlab/projects/task-board-api/database/tasks.db
+2026-01-05T15:11:36: ℹ️  [INFO] 🚀 Server running at http://0.0.0.0:3000
+2026-01-05T15:11:36: ℹ️  [INFO] 📊 Environment: production

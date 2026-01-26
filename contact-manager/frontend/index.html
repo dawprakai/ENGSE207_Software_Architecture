@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📇 Contact Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📇 Contact Manager</h1>
+            <p>ระบบจัดการรายชื่อติดต่อ - v2.0</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 ค้นหาชื่อ...">
+            </div>
+            <button class="btn btn-primary" onclick="showAddForm()">
+                ➕ เพิ่มรายชื่อ
+            </button>
+        </div>
+
+        <div id="addForm" class="form-container" style="display: none;">
+            <h3>เพิ่มรายชื่อใหม่</h3>
+            <form onsubmit="addContact(event)">
+                <div class="form-group">
+                    <label for="name">ชื่อ * <span id="charCount" class="char-count">0/50</span></label>
+                    
+                    <input type="text" id="name" name="name" maxlength="50" required 
+                           placeholder="ใส่ชื่อ (ไม่เกิน 50 ตัวอักษร)">
+                
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" 
+                           placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">เบอร์โทร</label>
+                    <input type="text" id="phone" name="phone" 
+                           maxlength="20"
+                           placeholder="08x-xxx-xxxx">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-success">💾 บันทึก</button>
+                    <button type="button" class="btn btn-secondary" onclick="hideAddForm()">
+                        ❌ ยกเลิก
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="contactList" class="contact-list">
+            <p class="loading">กำลังโหลด...</p>
+        </div>
+
+        <div id="statusMessage" class="status-message"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

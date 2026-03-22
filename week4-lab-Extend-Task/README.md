@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## 👥 Group 9 Members — ENGSE207 Software Architecture
 
 | Student ID      | Name                         | Role                     |

@@ -6,7 +6,7 @@
 | **67543210027-8** | นางสาว กันติชา เกิดสี          | ⭐ Team Leader /🧪 Tester      |
 | **67543210049-2** | นางสาว กชพร วงศ์ใหญ่         | 🛠️ Dev B (Backend) /🧪 Tester  |
 | **67543210073-2** | นางสาว วริศรา สรรพกรพิเศษ     | 🎨 Dev A (Frontend)             |
-=======
+
 # 📋 Week 4 Homework — Team Chat System
 **ENGSE207 Software Architecture**  
 **Feature:** Add Real-time Team Chat to Task Board System  

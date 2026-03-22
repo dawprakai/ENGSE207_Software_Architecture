@@ -1,0 +1,69 @@
+openapi: 3.0.0
+info:
+title: Chat Service API
+version: 1.0.0
+
+paths:
+/api/boards/{boardId}/messages:
+post:
+summary: Send message
+parameters:
+- name: boardId
+in: path
+required: true
+schema:
+type: string
+requestBody:
+required: true
+content:
+application/json:
+schema:
+type: object
+properties:
+content:
+type: string
+type:
+type: string
+responses:
+"200":
+description: Message sent
+
+get:
+  summary: Get messages
+  parameters:
+    - name: boardId
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    "200":
+      description: List of messages
+
+/api/boards/{boardId}/messages/{messageId}:
+get:
+summary: Get message by ID
+parameters:
+- name: boardId
+in: path
+required: true
+schema:
+type: string
+- name: messageId
+in: path
+required: true
+schema:
+type: string
+responses:
+"200":
+description: Message detail
+
+delete:
+  summary: Delete message
+  parameters:
+    - name: boardId
+      in: path
+      required: true
+    - name: messageId
+      in: path
+      required: tr

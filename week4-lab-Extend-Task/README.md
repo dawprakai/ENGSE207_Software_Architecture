@@ -79,7 +79,7 @@
 ## 3. Event Design
 
 ### MessageSent
-```json
+```
 {
   "eventType": "MessageSent",
   "payload": {
@@ -89,8 +89,9 @@
     "content": "string"
   }
 }
+```
 ### UserJoined
-```json
+```
 {
   "eventType": "UserJoined",
   "payload": {
@@ -98,7 +99,9 @@
     "roomId": "string"
   }
 }
+```
 ## FileUploaded
+```
 {
   "eventType": "FileUploaded",
   "payload": {
@@ -109,49 +112,54 @@
 
 ```
 ## Event Flow
+```
 1.User ส่งข้อความ
 2.Chat Service บันทึก MongoDB
 3.Publish event
 4.Broadcast ไป user ใน room
 ```
 
-```
 ## 4. API Specification
 ### POST /api/boards/:boardId/messages
+```
 {
   "content": "Hello",
   "type": "text"
 }
 ```
 
-```
+
 ## GET /api/boards/:boardId/messages
 รองรับ:
+```
 -pagination
 -search
 ```
 
-```
 ## WebSocket Events
 ### Client → Server
+```
 - join_room
 - send_message
 - typing
+```
 ### Server → Client
+```
 - message_received
 - user_joined
 - typing
 ```
 
-```
+
 ## 5. Challenges & Solutions
 ### 1. Message Ordering
+```
 ปัญหา: ข้อความเรียงผิด
 วิธีแก้: ใช้ sequence number จาก Redis
 ```
 
-```
 ### 2. Message Loss
+```
 ปัญหา: หลุดแล้วข้อมูลหาย
 วิธีแก้:
 ใช้ ACK
@@ -159,8 +167,8 @@ retry
 reconnect แล้ว sync
 ```
 
-```
 ## 3. Scalability
+```
 ปัญหา: user เยอะ
 วิธีแก้:
 Redis adapter
@@ -168,17 +176,17 @@ scale หลาย instance
 load balancer
 ```
 
-```
 ## 4. Data Growth
+```
 ปัญหา: ข้อมูลเยอะ
 วิธีแก้:
 MongoDB (hot data)
 S3 (cold data)
 ใช้ TTL
 ```
-
-```
 ## 📦 Project Structure
+```
+Project Structure
 ├── 📄 README.md (สรุปภาพรวม)
 ├── 📊 architecture_diagram.png
 ├── 📊 event_flow_diagram.png
@@ -187,9 +195,3 @@ S3 (cold data)
 └── 📄 challenges_solutions.pd
 ```
 
-```
-## 👥 Team Info
-Course: ENGSE207
-Week: 4
-Feature: Team Chat
->>>>>>> 6f808b9 (add week4 chat system)
